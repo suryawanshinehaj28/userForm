@@ -1,0 +1,40 @@
+<!-- <app-usercount (userCount)="userCount($event)"></app-usercount>
+<div class="container" style="padding-top: 1%;">
+  <button type="button" class="btn btn-success">user Count: {{usercount}}</button>
+</div> -->
+
+<div class="container" style="padding-top: 2%;">
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Email</th>
+        <th scope="col">Contact</th>
+        <th scope="col">Address</th>
+        
+        <th scope="col">Image</th>
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+
+      <tr class="success" *ngFor="let item of userarray,let i=index">
+        <td scope="row">{{i+1}}</td>
+        <td>{{item.firstname }}</td>
+        <td>{{item.email }}</td>
+        <td>{{item.phonenumber }}</td>
+
+        <td>{{item.address}}</td>
+       
+        <td><img [src]="item.image"  alt="Girl in a jacket" [width]="160" [height]="160"></td>
+        <td><button type="button" class="btn btn-success" (click)="editProfile(item.id)">Edit</button><button type="button" class="btn btn-success" (click)="deleteprofile(item.id,i)" style="margin-left:2%">delete</button></td>
+
+        
+         
+        
+      </tr>
+
+    </tbody>
+  </table>
+</div>
