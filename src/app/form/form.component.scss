@@ -107,3 +107,17 @@ body {
   .closebtn:hover {
 	color: black;
   }
+
+  .addPhotos-inputFile {
+	opacity: 0;
+  }
+
+  .addPhotos-inputOuter {
+	position: relative;
+  }
+
+  .addPhotos-inputUI {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+  }

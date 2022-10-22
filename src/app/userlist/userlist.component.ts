@@ -22,7 +22,6 @@ imageurl:any="assets/img/images.jpg";
     this.showprofile();
   }
  
-
   deleteprofile(id:any,index:any){
     //alert(id)
     this.user.deleteprofile(id).subscribe(
@@ -33,8 +32,6 @@ imageurl:any="assets/img/images.jpg";
        
       }
     )
-
-
   }
   showprofile(){
     this.user.getprofileList().subscribe((el:any)=>{
@@ -44,13 +41,10 @@ imageurl:any="assets/img/images.jpg";
     })
   }
 
-  userCount(count:any){
+   userCount(count:any){
     this.usercount = count
-  }
-
-  editProfile(profileID:any){
-    //alert(profileID)
+   }
+   editProfile(profileID:any){
    this.userprofileID.emit(profileID)
-    
-  }
+   }
 }

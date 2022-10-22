@@ -8,7 +8,7 @@ import { FormComponent } from './form/form.component';
 import { HttpClientModule} from '@angular/common/http';
 
 import { UserlistComponent } from './userlist/userlist.component';
-import { UsercountComponent } from './usercount/usercount.component'
+
 
 @NgModule({
   declarations: [
@@ -16,7 +16,7 @@ import { UsercountComponent } from './usercount/usercount.component'
     FormComponent,
    
     UserlistComponent,
-    UsercountComponent
+   
   ],
   imports: [
     BrowserModule,
